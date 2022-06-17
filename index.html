@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Athena Kao</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="nav-bar" class="nav">
+      <a href="#intro-block">About</a>
+      <a href="#skills-block">Skills</a>
+      <a href="#projects-block">Projects</a>
+      <a href="#personality-block">Personality</a>
+      <a href="#ending-block">Contact</a>
+      <a href="javascript:void(0);" id="menu-icon" onclick="expandMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div id="main-container">
+      <div class="block" id="intro-block">
+        <p>Hello, my name is <span>Athena Kao</span>.</p>
+        <img src="images/mini.svg" />
+        <p>I'm a web developer.</p>
+      </div>
+      <div class="block" id="skills-block">
+        <p>I have knowledge of all of the following:</p>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Javascript</li>
+          <li>Typescript</li>
+          <li>SQL</li>
+          <li>React</li>
+          <li>Angular</li>
+          <li>JQuery</li>
+          <li>MVC</li>
+          <li>Photoshop</li>
+          <li>Microsoft Office</li>
+        </ul>
+        <div id="skills-list"></div>
+      </div>
+      <div class="block" id="projects-block">
+        <p>Here are some projects that I've worked on.</p>
+        <div id="carousel">
+          <div id="slides">
+            <div id="slide-1">
+              <div class="proj-img"><img src="images/ss-bizappjs.jpg"/></div>
+              <p class="proj-name">BizAppJS</p>
+              <p class="proj-desc">
+                A JavaScript framework that uses components to build single-page applications. BizAppJS was made 
+                with business applications in mind and has a number of features such as MVC-based component design, data binding, 
+                sequential asynchronous tasks, and built-in gadgets.
+                <br>
+                <a class="proj-link" href="https://www.bizappjs.com" target="_blank">Click here to see this project in more detail.</a>
+              </p>
+            </div>
+            <div id="slide-2">
+              <div class="proj-img"><img src="images/ss-sandwichshop.jpg"/></div>
+              <p class="proj-name">Sandwich Shop Game</p>
+              <p class="proj-desc">
+                A web game developed with Angular. This multi-tasking time management game runs completely on the front-end. It utilizes 
+                components, state management, forms, routing, and more to deliver a successful game experience.
+                <br>
+                <a class="proj-link" href="https://athenakao.github.io/sandwich-shop-game" target="_blank">Click here to see this project in more detail.</a>
+              </p>
+            </div>
+            <div id="slide-3">
+              <div class="proj-img"><img src="images/ss-cardmatch.jpg"/></div>
+              <p class="proj-name">Card Match Game</p>
+              <p class="proj-desc">
+                A classic card-matching game made with React. The game runs entirely on the front-end and is handled by a number of major 
+                concepts in React such as components, props, state, JSX, and more.
+                <br>
+                <a class="proj-link" href="https://athenakao.github.io/card-match-game" target="_blank">Click here to see this project in more detail.</a>
+              </p>
+            </div>
+            <div id="slide-4">
+              <div class="proj-img"><img src="images/ss-vnengine.jpg"/></div>
+              <p class="proj-name">Visual Novel Engine</p>
+              <p class="proj-desc">
+                A visual novel engine made with HTML, CSS, JavaScript, and JQuery. It is capable of displaying text and images, playing audio, 
+                applying filters, creating animations, and more. All of these elements are combined to allow an engaging experience and 
+                entertaining story.
+                <br>
+                <a class="proj-link" href="http://www.klaziki.com/stories/worldofphenomena/ch1.html" target="_blank">Click here to see an example of this project.</a>
+              </p>
+            </div>
+            <div id="slide-5">
+              <div class="proj-img"><img src="images/ss-creatorwebsite.jpg"/></div>
+              <p class="proj-name">Creator's Website</p>
+              <p class="proj-desc">
+                A creator's personal website made with plain HTML, CSS, and JavaScript. The website is responsive, 
+                clean, and provides an image gallery as well as modals to display the owner's creations.
+                <br>
+                <a class="proj-link" href="http://www.klaziki.com" target="_blank">Click here to see this project in more detail.</a>
+              </p>
+            </div>
+          </div>
+          <div id="carousel-nav">
+            <a href="#slide-1" class="active">1</a>
+            <a href="#slide-2">2</a>
+            <a href="#slide-3">3</a>
+            <a href="#slide-4">4</a>
+            <a href="#slide-5">5</a>
+          </div>
+        </div>
+      </div>
+      <div class="block" id="personality-block">
+        <div class="subblock" id="learner-subblock">
+          <p>I am a self-motivated and fast learner.</p>
+          <img src="images/book.svg" />
+          <p>Web technology is constantly advancing, so I strive to keep up.</p>
+        </div>
+        <div class="subblock" id="detail-subblock">
+          <p>I am attentive to detail.</p>
+          <img src="images/magnifying-glass.svg" />
+          <p>I like things done well and done right.</p>
+        </div>
+        <div class="subblock" id="people-subblock">
+          <p>I am open-minded and adaptable.</p>
+          <img src="images/people.svg" />
+          <p>I get along with a diversity of people.</p>
+        </div>
+        <div class="subblock" id="writing-subblock">
+          <p>I am good at writing.</p>
+          <img src="images/pen.svg" />
+          <p>I make my documentations clear, consise, and easy for anybody to understand.</p>
+        </div>
+      </div>
+      <div class="block" id="ending-block">
+        <p>You can contact me by sending an email to <span>athkao@gmail.com</span>.</p>
+        <p>Thank you for your time and I look forward to hearing from you!</p>
+        <div><a href="#intro-block">^ Click here to return to top ^</a></div>
+      </div>
+    </div>
+  </body>
+</html>
